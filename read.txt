@@ -1,1 +1,2 @@
-this is pytorch learn practice。
+this is pytorch learn practice notebook。
+I must practice every day。
