@@ -27,6 +27,8 @@
   > git log 
   >
   > git log --pretty=oneline
+  >
+  > git log --graph #分支合并图
 
 - 版本回退
 
@@ -81,3 +83,31 @@
 - 删除分支
 
   > git branch -d <branchname>
+  >
+  > git branch -D <branchname> #强行删除未合并的分支
+
+- 合并分支
+
+  > git merge <branchname>  #Fast forward模式，删除分支后，丢掉分支信息
+  >
+  > git merge --no-f -m <message> <branchname> #禁用Fast forward模式，生成新的commit，分支历史看出分支信息
+
+- 储藏工作现场
+
+  > git stash
+
+- 查看工作现场列表
+
+  > git stash list
+
+- 恢复工作现场
+
+  > git stash apply   #恢复后，stash并不删除
+  >
+  > git stash pop      #恢复并删除stash
+  >
+  > git stash drop     #删除stash
+
+- 复制特定的提交到当前分支
+
+  > git cherry-pick <versionid>
