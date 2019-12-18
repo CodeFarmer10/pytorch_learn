@@ -111,3 +111,60 @@
 - 复制特定的提交到当前分支
 
   > git cherry-pick <versionid>
+
+- 创建远程分支到本地
+
+  > git checkout -b branch-name origin/branch-name 
+
+- 指定本地分支与远程分支的链接
+
+  > git branch --set-upstream-to=origin/branch-name branch-name
+  >
+  > git branch --set-upstream branch-name origin/branch-name
+
+- 推送分支
+
+  > git push origin branch-name
+
+- 抓取分支
+
+  > git pull
+
+- 查看远程库
+
+  > git remote -v
+
+- 分叉提交历史整理成一条直线
+
+  > git rebase  #修改本地分叉
+
+## 标签管理
+
+- 创建标签
+
+  > git tag tag-name
+  >
+  > git tag tag-name commit-id
+  >
+  > git tag -a tag-name -m message commit-id  #message标签信息
+
+- 查看标签
+
+  > git tag  #查看所有标签
+  >
+  > git show tag-name #查看特定标签
+
+- 删除标签
+
+  > git tag -d tag-name
+
+- 推送标签
+
+  > git push origin tag-name
+  >
+  > git push origin --tags  #一次性推送所有本地标签
+
+- 删除远程标签
+
+  > 先git tag -d tag-name，再git push origin :refs/tags/tag-name
+
