@@ -8,11 +8,11 @@
 
 - 添加文件至仓库
 
-  > git add <filename>  #到暂存区
+  > git add  filen-ame  #到暂存区
 
 - 文件提交到仓库
 
-  > git commit -m  <message> #一次性将暂存区提交到分支
+  > git commit -m  message #一次性将暂存区提交到分支
 
 - 查看仓库当前状态
 
@@ -20,7 +20,7 @@
 
 - 对比文件,查看修改
 
-  > git diff <filename>
+  > git diff file-name
 
 - 查看提交日志
 
@@ -36,7 +36,7 @@
   >
   > git reset --soft HEAD^     不删除新增本地文件
   >
-  > git reset --hard <verisonid>
+  > git reset --hard  verisonid
 
 - 查看命令历史
 
@@ -44,37 +44,37 @@
 
 - 撤销文件修改
 
-  > git checkout -- <filename>  #恢复到最近一次git commit或git add时的状态
+  > git checkout --  filen-ame  #恢复到最近一次git commit或git add时的状态
   >
-  > git reset HEAD <filename> #撤销暂存区的修改，放回工作区
+  > git reset HEAD filen-ame #撤销暂存区的修改，放回工作区
 
 - 删除文件
 
-  > git rm <filename>
+  > git rm  file-name
 
 - 关联远程仓库
 
-  > git remote add origin <远程仓库地址>  #origin远程库名称，可修改
+  > git remote add origin 远程仓库地址  #origin远程库名称，可修改
 
 - 推送分支
 
-  > git push -u origin <branchname> # -u第一次推送，本地分支与远程分支关联
+  > git push -u origin branch-name # -u第一次推送，本地分支与远程分支关联
 
 - 克隆仓库
 
-  > git clone <远程仓库地址>
+  > git clone 远程仓库地址
 
 ## 分支管理
 
 - 创建分支
 
-  > git checkout -b <branchname>  # -b创建并切换
+  > git checkout -b branch-name  # -b创建并切换
   >
-  > git branch <branchname> # 创建分支
+  > git branch branch-name # 创建分支
 
 - 切换分支
 
-  > git checkout <branchname>
+  > git checkout branch-name
 
 - 查看当前分支
 
@@ -82,15 +82,15 @@
 
 - 删除分支
 
-  > git branch -d <branchname>
+  > git branch -d  branch-name
   >
-  > git branch -D <branchname> #强行删除未合并的分支
+  > git branch -D  branch-name #强行删除未合并的分支
 
 - 合并分支
 
-  > git merge <branchname>  #Fast forward模式，删除分支后，丢掉分支信息
+  > git merge branch-name  #Fast forward模式，删除分支后，丢掉分支信息
   >
-  > git merge --no-f -m <message> <branchname> #禁用Fast forward模式，生成新的commit，分支历史看出分支信息
+  > git merge --no-f -m message branch-name #禁用Fast forward模式，生成新的commit，分支历史看出分支信息
 
 - 储藏工作现场
 
@@ -110,7 +110,7 @@
 
 - 复制特定的提交到当前分支
 
-  > git cherry-pick <versionid>
+  > git cherry-pick versionid
 
 - 创建远程分支到本地
 
